@@ -6,6 +6,7 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:react-hooks/recommended',
+        'plugin:storybook/recommended',
     ],
     parserOptions: {
         ecmaVersion: 'latest',
@@ -25,9 +26,9 @@ module.exports = {
         'import/no-unresolved': [
             'error',
             {
-                'ignore': [ '\.svg' ]
-            }
-        ]
+                ignore: ['.svg'],
+            },
+        ],
     },
     settings: {
         'import/parsers': {
@@ -35,7 +36,7 @@ module.exports = {
         },
         'import/resolver': {
             typescript: {
-                project: ["./tsconfig.json"]
+                project: ['./tsconfig.json'],
             },
         },
     },
