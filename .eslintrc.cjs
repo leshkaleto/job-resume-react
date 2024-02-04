@@ -7,6 +7,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:react-hooks/recommended',
         'plugin:storybook/recommended',
+        '@feature-sliced'
     ],
     parserOptions: {
         ecmaVersion: 'latest',
@@ -28,7 +29,7 @@ module.exports = {
             {
                 ignore: ['.svg'],
             },
-        ],
+        ]
     },
     settings: {
         'import/parsers': {
@@ -36,6 +37,7 @@ module.exports = {
         },
         'import/resolver': {
             typescript: {
+                "alwaysTryTypes": true,
                 project: ['./tsconfig.json'],
             },
         },
