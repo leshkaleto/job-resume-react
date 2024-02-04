@@ -15,7 +15,7 @@ module.exports = {
         project: ['./tsconfig.json', './tsconfig.node.json'],
         tsconfigRootDir: __dirname,
     },
-    ignorePatterns: ['dist', '.eslintrc.cjs'],
+    ignorePatterns: ['*.ts', '*.js'],
     parser: '@typescript-eslint/parser',
     plugins: ['react-refresh', 'import'],
     rules: {
