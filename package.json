@@ -17,9 +17,9 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,html}": [
-      "pnpm run lint:fix",
-      "pnpm run prettier:fix"
+    "*.{js,ts,tsx}": [
+      "eslint src --ext ts,tsx --fix",
+      "prettier --config .prettierrc.mjs --check ./src/**/*.{tsx,ts} --write"
     ]
   },
   "dependencies": {
@@ -58,6 +58,7 @@
     "lint-staged": "^15.2.2",
     "prettier": "3.2.4",
     "storybook": "^7.6.12",
+    "storybook-dark-mode": "^3.0.3",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
