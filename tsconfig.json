@@ -18,12 +18,14 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
+        /* Custom */
+        "types": ["vite/client"],
         "paths": {
             "@/*": ["./src/*"],
-            "/*": ["./public/*"],
+            "~/*": ["./public/*"]
         },
     },
-    "include": ["src", "types"],
+    "include": ["src", "types", "public"],
     "references": [
         {
             "path": "./tsconfig.node.json",
