@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --fix",
     "prettier": "prettier --config .prettierrc.mjs --check ./src/**/*.{tsx,ts}",
     "prettier:fix": "prettier --config .prettierrc.mjs --check ./src/**/*.{tsx,ts} --write",
     "preview": "vite preview",
@@ -17,7 +17,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,html}": [
+    "*.{js,ts,tsx}": [
       "pnpm run lint:fix",
       "pnpm run prettier:fix"
     ]
@@ -58,6 +58,7 @@
     "lint-staged": "^15.2.2",
     "prettier": "3.2.4",
     "storybook": "^7.6.12",
+    "storybook-dark-mode": "^3.0.3",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
