@@ -19,13 +19,13 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
         /* Custom */
-        "types": ["vite/client"],
+        "types": ["vite/client", "jest"],
         "paths": {
             "@/*": ["./src/*"],
             "~/*": ["./public/*"]
         },
     },
-    "include": ["src", "types", "public"],
+    "include": ["src", "types"],
     "references": [
         {
             "path": "./tsconfig.node.json",
